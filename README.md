@@ -1,70 +1,26 @@
-# Getting Started with Create React App
+# React Pagination 기능 구현
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Pagination 이란?
 
-## Available Scripts
+Pagination은 여러 개의 게시물을 보여주는 웹사이트(카페, 게시판 서비스를 갖고 있는 플랫폼 등)에서 볼 수 있는 UI이다.
+이번 프로젝트에서는 임의로 Data.json에서
 
-In the project directory, you can run:
+```json
+{
+    "ID": "1",
+    "Name": "김용민",
+    "email": "dydals3440@gmail.com"
+},
+```
 
-### `npm start`
+위와 같은 객체를 담은 여러개의 정보를 mock-data로 구성하여 pagination 기능을 구현해보았습니다.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 구현 기능
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+[x] 옵션 별 페이지에서 보이는 게시글 수 설정 가능
+[x] pagination 기능 (실제 데이터의 크기에 맞게 유동적으로, 전체 페이지수를 계산)
+[x] 간단한 스타일링
 
-### `npm test`
+### pagination 동작 확인
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![pagination](/src/img/pagination.gif)
